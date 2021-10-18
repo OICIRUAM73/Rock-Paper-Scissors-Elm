@@ -1,0 +1,44 @@
+{
+  "name": "rock-paper-scissors-elm",
+  "homepage": "https://github.com/OICIRUAM73/Rock-Paper-Scissors-Elm#readme",
+  "description": "Rock Paper scissors Game",
+  "version": "1.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "clean": "rm -rf elm-stuff",
+    "compile:elm": "elm make src/Main.elm --output=RPSGame/assets/js/elm.js",
+    "compile:css": "postcss RPSGame/assets/pcss/styles.pcss -o RPSGame/assets/css/styles.css",
+    "compile": "run-p compile:elm compile:css",
+    "dev": "run-p watch serve",
+    "build": "elm make src/Main.elm --output=RPSGame/assets/js/elm.js --optimize",
+    "serve": "serve -l 8099 .",
+    "watch:elm": "watch 'yarn run compile:elm' src",
+    "watch:css": "watch 'yarn run compile:css' RPSGame/assets/pcss/ RPSGame/assets/fonts/ src",
+    "watch": "run-p watch:elm watch:css",
+    "deploy": "gh-pages -d RPSGame"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OICIRUAM73/Rock-Paper-Scissors-Elm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OICIRUAM73/Rock-Paper-Scissors-Elm/issues"
+  },
+  "dependencies": {
+    "serve": "^12.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "cssnano": "^4.1.11",
+    "elm": "^0.19.1-5",
+    "gh-pages": "^3.1.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.9",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.1",
+    "watch": "^1.0.2"
+  }
+}
