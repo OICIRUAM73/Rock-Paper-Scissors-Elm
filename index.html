@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rock Paper Scissors Game</title>
+
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Microsoft app clip -->
+  <meta name="msapplication-TileColor" content="#558b2f">
+  <meta name="theme-color" content="#558b2f">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <!-- MDC -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/material-components-web.css">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body class="mdc-typography">
+  <div id="elm-app-is-loaded-here"></div>
+  <script src="assets/js/elm-mdc.js"></script>
+  <script src="assets/js/elm.js"></script>
+  <script>
+    var app = Elm.Main.init({
+      node: document.getElementById("elm-app-is-loaded-here")
+    });
+  </script>
+</body>
+
+</html>

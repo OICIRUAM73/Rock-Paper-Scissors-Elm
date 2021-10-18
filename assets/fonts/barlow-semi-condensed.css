@@ -1,0 +1,17 @@
+/* alegreya-sans-400normal - latin */
+@font-face {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  src:
+    url('/RPSGame/assets/fonts/barlow_semi_condensed/BarlowSemiCondensed-SemiBold.ttf') format('ttf');
+}
+
+/* alegreya-sans-700normal - latin */
+@font-face {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url('/RPSGame/assets/fonts/barlow_semi_condensed/BarlowSemiCondensed-Bold.ttf') format('ttf');
+}
